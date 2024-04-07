@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS vlanz;
+USE vlanz;
+
+CREATE TABLE user (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    email VARCHAR(255) UNIQUE,
+    password VARCHAR(255)
+);
